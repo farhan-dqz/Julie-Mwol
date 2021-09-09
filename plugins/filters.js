@@ -8,7 +8,7 @@ const FilterDb = require('./sql/filters');
 const Config = require('../config')
 const jid = Config.DISBGM !== false ? Config.DISBGM.split(',') : [];
 const afn = Config.PLKS !== false ? Config.PLKS.split(',') : [];
-const afnp = Config.THERI_KICK !== false ? Pinky.PLKAFN.split(',') : [];
+const afnp = Config.THERI_KICK !== false ? Config.THERI_KICK.split(',') : [];
 const Language = require('../language');
 const Lang = Language.getString('filters');
 
