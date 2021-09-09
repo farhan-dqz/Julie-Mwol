@@ -187,7 +187,7 @@ filtreler.map(
     }
 );
 }));
- MyPnk.addCommand({on: 'text', fromMe: false, onlyPm: true}, (async (message, match) => {
+ Julie.addCommand({on: 'text', fromMe: false, onlyPm: true}, (async (message, match) => {
 
     if(Config.PLKS){
 const array = afnp 
