@@ -5,7 +5,7 @@ you may not use this file except in compliance with the License.
 
 
 const {MessageType, GroupSettingChange, ChatModification, WAConnectionTest} = require('@adiwajshing/baileys');
-const Asena = require('../events');
+const Julie = require('../events');
 const Config = require('../config');
 
 const Language = require('../language');
@@ -21,14 +21,14 @@ async function checkImAdmin(message, user = message.client.user.jid) {
     return sonuc.includes(true);
 }
 
-Asena.addCommand({pattern: 'clear', fromMe: true, desc: END, dontAddCommandList: true}, (async (message, match) => {
+Julie.addCommand({pattern: 'clear', fromMe: true, desc: END, dontAddCommandList: true}, (async (message, match) => {
 
     await message.sendMessage('```cleaning chat...```');
     await message.client.modifyChat (message.jid, ChatModification.delete);
     await message.sendMessage('```🏳 Chat cleared 🏳```');
 }));
 
-Asena.addCommand({pattern: 'clean ?(.*)', fromMe: true, desc: END, dontAddCommandList: true}, (async (message, match) => {
+Julie.addCommand({pattern: 'clean ?(.*)', fromMe: true, desc: END, dontAddCommandList: true}, (async (message, match) => {
 
     await message.sendMessage('Chat clearing...');   
     await message.client.modifyChat (match[1] == '' ? message.jid : match [1], ChatModification.delete);

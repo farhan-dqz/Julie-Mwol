@@ -1,7 +1,7 @@
 /* Copyright (C) 2021 afnanplk
 */
 
-const Asena = require('../events');
+const Julie = require('../events');
 const config = require('../config');
 const Heroku = require('heroku-client');
 const heroku = new Heroku({
@@ -24,7 +24,7 @@ let baseURI = '/apps/' + config.HEROKU.APP_NAME;
         BGM_on = 'bgm ഓപ്ഷൻ ഓണാക്കി'
         BGM_off = 'bgm ഓപ്ഷൻ ഓഫാക്കി'
     }
-    Asena.addCommand({pattern: 'bgm ?(.*)', fromMe: true, desc: l_dsc, usage: '.bgm on / off' }, (async (message, match) => {
+    Julie.addCommand({pattern: 'bgm ?(.*)', fromMe: true, desc: l_dsc, usage: '.bgm on / off' }, (async (message, match) => {
         if (match[1] == 'off') {
                 await heroku.patch(baseURI + '/config-vars', { 
                     body: { 
