@@ -24,7 +24,7 @@ Julie.addCommand(
         } else {
           HANDLER = ".";
         }
-        CMD_HELP += '*🧞‍♂️'
+        CMD_HELP += '*🧞‍♂️' + 
           (match.length >= 3 ? HANDLER + match[2] : command.pattern) + '*/n' +
           (command.desc === ""
             ? "\n\n"
