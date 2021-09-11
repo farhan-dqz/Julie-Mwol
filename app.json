@@ -31,11 +31,6 @@
             "required": false,
             "value": "true"
         },
-        "WELCOME": {
-            "description": "You can select welcome as gif/pp",
-            "required": false,
-            "value": "pp"
-        },
         "WEL_GIF": {
             "description": "Fill here any gif link if you selected gif as WEELCOME",
             "required": false,

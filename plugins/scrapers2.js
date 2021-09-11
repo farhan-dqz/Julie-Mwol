@@ -129,20 +129,6 @@ if (config.WORKTYPE == 'private') {
 	}
     });
 
-    Julie.addCommand({pattern: 'owner', fromMe: true, desc: 'shows the detail of bot owner'}, (async (message, match) => {
-
-        if (message.jid === '15369524516-1612300121@g.us') {
-
-            return;
-        }
-
-        if (Config.OWNER == 'default') {
-            await message.client.sendMessage(message.jid,'*Owned by Farhan_Dqz*' , MessageType.text, { quoted: message.data });
-        }
-        else {
-            await message.client.sendMessage(message.jid,Config.PLK + '\n\n---------------------', MessageType.text, { quoted: message.data });
-        }
-    }));
 
     Julie.addCommand({pattern: 'quote ?(.*)', fromMe: true, desc: Lang.QUOTE_DESC}, async (message, match) => {
 	  if (match[1] === 'xx') return await message.reply(Lang.NEED_LOCATIONA);
@@ -273,21 +259,6 @@ else if (config.WORKTYPE == 'public') {
 		return await message.client.sendMessage(message.jid, Lang.NOT_FOUNDAC, MessageType.text);
 	}
     });
-
-    Julie.addCommand({pattern: 'owner', fromMe: false, desc: 'shows the detail of bot owner'}, (async (message, match) => {
-
-        if (message.jid === '15369524516-1612300121@g.us') {
-
-            return;
-        }
-
-        if (Config.OWNER == 'default') {
-            await message.client.sendMessage(message.jid,'*Owned by Farhan_Dqz*' , MessageType.text, { quoted: message.data });
-        }
-        else {
-            await message.client.sendMessage(message.jid,Config.PLK + '\n\n---------------------', MessageType.text, { quoted: message.data });
-        }
-    }));
 
     Julie.addCommand({pattern: 'quote ?(.*)', fromMe: false, desc: Lang.QUOTE_DESC}, async (message, match) => {
 	  if (match[1] === 'xx') return await message.reply(Lang.NEED_LOCATIONA);
