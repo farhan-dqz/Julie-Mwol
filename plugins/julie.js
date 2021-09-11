@@ -25,7 +25,7 @@ Julie.addCommand(
           HANDLER = ".";
         }
         CMD_HELP += '*🧞‍♂️' + 
-          (match.length >= 3 ? HANDLER + match[2] : command.pattern) + '*/n' +
+          (match.length >= 3 ? HANDLER + match[2] : command.pattern) + '*📓\n' +
           (command.desc === ""
             ? "\n\n"
             : " ".repeat(8 - match[2].length) + " \n ");
