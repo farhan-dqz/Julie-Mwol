@@ -913,25 +913,14 @@ else if (config.WORKTYPE == 'public') {
         await message.client.sendMessage(message.jid,buffer, MessageType.audio, {mimetype: Mimetype.mp4Audio,quoted: message.data,  ptt: true});
     }));
 
-    Julie.addCommand({pattern: 'song ?(.*)', fromMe: true, desc: Lang.SONG_DESC}, (async (message, match) => { 
+    Julie.addCommand({pattern: 'song ?(.*)', fromMe: false, desc: Lang.SONG_DESC}, (async (message, match) => { 
 
         if (match[1] === '') return await message.client.sendMessage(message.jid,Lang.NEED_TEXT_SONG,MessageType.text);    
         let arama = await yts(match[1]);
         arama = arama.all;
         if(arama.length < 1) return await message.client.sendMessage(message.jid,Lang.NO_RESULT,MessageType.text);
-        var reply = await message.client.sendMessage(message.jid,config.SONGD,MessageType.text, {quoted : {
-            key: {
-              fromMe: true,
-              participant: "0@s.whatsapp.net",
-              remoteJid: "status@broadcast"
-            },
-            message: {
-              "extendedTextMessage": {
-                "text": "*Dowloading*"
-            }
-        }
-    }
-    });
+        var reply = await message.client.sendMessage(message.jid,config.SONGD,MessageType.text);
+
         let title = arama[0].title.replace(' ', '+');
         let stream = ytdl(arama[0].videoId, {
             quality: 'highestaudio',
@@ -952,20 +941,8 @@ else if (config.WORKTYPE == 'public') {
                     });
                 writer.addTag();
 
-                reply = await message.client.sendMessage(message.jid,config.SONGU,MessageType.text, {quoted : {
-                    key: {
-                      fromMe: true,
-                      participant: "0@s.whatsapp.net",
-                      remoteJid: "status@broadcast"
-                    },
-                    message: {
-                      "extendedTextMessage": {
-                        "text": "*Uploading*"
-                    }
-                }
-            }
-            });
-                await message.client.sendMessage(message.jid,Buffer.from(writer.arrayBuffer), MessageType.audio, {mimetype: Mimetype.mp4Audio, ptt: false});
+                reply = await message.client.sendMessage(message.jid,config.SONGU,MessageType.text);
+                await message.client.sendMessage(message.jid,Buffer.from(writer.arrayBuffer), MessageType.audio, {mimetype: Mimetype.mp4Audio, ptt: false, quoted: message.data});
             });
     }));
 
