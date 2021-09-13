@@ -31,6 +31,11 @@
             "required": false,
             "value": "true"
         },
+        "TALKING_PINKY": {
+            "description": " Turn your account into a chatbot!",
+            "required": true,
+            "value": "false"
+        },
         "WEL_GIF": {
             "description": "Fill here any gif link if you selected gif as WEELCOME",
             "required": false,
