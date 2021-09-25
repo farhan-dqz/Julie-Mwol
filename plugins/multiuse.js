@@ -34,7 +34,7 @@ else if (Config.WORKTYPE == 'public') {
   await message.client.sendMessage(message.jid, LOAD_ING , MessageType.text);
   
   //if(match[1] == '') return 
-      let { data, type } = await instaGram(match[1], '2b87de8af2faa2fe');
+      let { data, type } = await instaGram(match[1], 'cd12f3a61bc0c27b');
   //if(match[1] == '') return 
       if (type === 'image') { await message.sendMessage(data, MessageType.image,{ caption: "Made By JulieMwol" }) }
       else if (type === 'video') { await message.sendMessage(data, MessageType.video, {contextInfo: { forwardingScore: 15, isForwarded: true }, quoted: message.data}, { caption: "Made By JulieMwol" }) }
