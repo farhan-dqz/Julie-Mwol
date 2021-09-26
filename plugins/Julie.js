@@ -150,9 +150,9 @@ async (message, match) => {
 
 else if (Config.WORKTYPE == 'public') {
 
-  Asena.addCommand({ pattern: "help ?(.*)", fromMe: false, dontAddCommandList: true },async (message, match) => {
+  Julie.addCommand({ pattern: "help ?(.*)", fromMe: false, dontAddCommandList: true },async (message, match) => {
       let CMD_HELP = "";
-      Asena.commands.map(async (command, index) => {
+      Julie.commands.map(async (command, index) => {
         if (
           command.dontAddCommandList === false &&
           command.pattern !== undefined
