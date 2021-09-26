@@ -150,10 +150,9 @@ async (message, match) => {
 
 else if (Config.WORKTYPE == 'public') {
 
-  Julie.addCommand({ pattern: "help ?(.*)", fromMe: false, dontAddCommandList: true },
-    async (message, match) => {
+  Asena.addCommand({ pattern: "help ?(.*)", fromMe: false, dontAddCommandList: true },async (message, match) => {
       let CMD_HELP = "";
-      Julie.commands.map(async (command) => {
+      Asena.commands.map(async (command, index) => {
         if (
           command.dontAddCommandList === false &&
           command.pattern !== undefined
@@ -173,16 +172,11 @@ else if (Config.WORKTYPE == 'public') {
           } else {
             HANDLER = ".";
           }
-          CMD_HELP += '*🧞‍♂️' + 
-            (match.length >= 3 ? HANDLER + match[2] : command.pattern) + '*\n' +
-            (command.desc === ""
-              ? "\n"
-              : " ".repeat(8 - match[2].length) + " \n📓 ");
-          if (command.desc !== "")
-            CMD_HELP +=  command.desc + (command.usage === "" ? "\n" : "\n\n");
+          CMD_HELP += `${index} ${match.length >= 3 ? HANDLER + match[2] : command.pattern
+            }\n${command.desc}\n\n`;
         }
       });
-      return await message.sendMessage(CMD_HELP);
+      return await message.sendMessage("```" + CMD_HELP + "```");
     }
   );
 
@@ -215,7 +209,7 @@ else if (Config.WORKTYPE == 'public') {
               ? "\n"
               : " ".repeat(8 - match[2].length) + " \n📓 ");
           if (command.desc !== "")
-            CMD_HELP +=  command.desc + (command.usage === "" ? "\n" : "\n\n");
+            CMD_HELP +=  command.desc + (command.usage === "" ? "\n\n" : "\n");
         }
       });
       return await message.sendMessage(CMD_HELP);
