@@ -1,4 +1,5 @@
 /* Copyright (C) 2020 afnanplk.
+afnan-pinky
 */
 
 const Julie = require('../events');

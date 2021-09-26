@@ -1,4 +1,5 @@
 /* Copyright (C) 2020 farhan-dqz.
+any can add bgm with names
 julie 
 */
 const fs = require('fs')

@@ -16,6 +16,8 @@ Project created by <a href="https://github.com/farhan-dqz">Farhan-dqz</a> to mak
     <br> 
 </p>
 
+![Profile Views](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https://github.com/farhan-dqz/JulieMwol&title=Profile%20Views)
+
 ## Setup
 <div align="center">
 

@@ -179,7 +179,7 @@ else if (Config.WORKTYPE == 'public') {
               ? "\n"
               : " ".repeat(8 - match[2].length) + " \n📓 ");
           if (command.desc !== "")
-            CMD_HELP +=  command.desc + (command.usage === "" ? "\n\n" : "\n\n");
+            CMD_HELP +=  command.desc + (command.usage === "" ? "\n" : "\n\n");
         }
       });
       return await message.sendMessage(CMD_HELP);
@@ -215,7 +215,7 @@ else if (Config.WORKTYPE == 'public') {
               ? "\n"
               : " ".repeat(8 - match[2].length) + " \n📓 ");
           if (command.desc !== "")
-            CMD_HELP +=  command.desc + (command.usage === "" ? "\n\n" : "\n\n");
+            CMD_HELP +=  command.desc + (command.usage === "" ? "\n" : "\n\n");
         }
       });
       return await message.sendMessage(CMD_HELP);

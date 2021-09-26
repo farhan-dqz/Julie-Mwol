@@ -1,5 +1,5 @@
 /* Codded by @mrclfd // rapiUp
-Telegram: t.me/mrclfd
+recoded by farhan-dqz
 Semoga Berfaedah dan Berkah :)
 */
 

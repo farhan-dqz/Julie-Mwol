@@ -1,4 +1,4 @@
-/* Codded by @ALLanplk - farhandqz
+/* Codded by @Afnanplk - farhandqz
 */
 
 const Julie = require('../events');
