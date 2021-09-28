@@ -8,7 +8,7 @@ if (Config.WORKTYPE == 'private') {
     { pattern: "list ?(.*)", fromMe: true, dontAddCommandList: true },
     async (message, match) => {
       let CMD_HELP = "";
-      Asena.commands.map(async (command) => {
+      Julie.commands.map(async (command) => {
         if (
           command.dontAddCommandList === false &&
           command.pattern !== undefined
@@ -46,7 +46,7 @@ else if (Config.WORKTYPE == 'public') {
     { pattern: "help ?(.*)", fromMe: false, dontAddCommandList: true },
     async (message, match) => {
       let CMD_HELP = "";
-      Asena.commands.map(async (command) => {
+      Julie.commands.map(async (command) => {
         if (
           command.dontAddCommandList === false &&
           command.pattern !== undefined
