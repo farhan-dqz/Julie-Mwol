@@ -28,6 +28,13 @@ let baseURI = '/apps/' + config.HEROKU.APP_NAME;
       BGM_TWO = '𝐁𝐆𝐌 തരം രണ്ടാം മോഡിലേക്ക് മാറ്റി'
     }
 
+    if (config.LANG == 'SI') {
+    
+    plk_desc = 'change reply message BGM mode'
+    BGM_ONE = '𝐁𝐆𝐌 වෙනස් වුණි 𝟭𝘀𝘁 𝐦𝐨𝐝𝐞'
+    BGM_TWO = '𝐁𝐆𝐌 වෙනස් වුණි 𝐭𝐨 𝟐𝐧𝐝 𝐦𝐨𝐝𝐞'
+    }
+
  Julie.addCommand({pattern: 'bgm ?(.*)', fromMe: true, desc: plk_desc, usage: '.bgm one / two' }, (async (message, match) => {
         if (match[1] == 'two') {
                 await heroku.patch(baseURI + '/config-vars', { 
