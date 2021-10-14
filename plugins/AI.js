@@ -40,6 +40,7 @@ if (conf.LANG == 'HI') vtalk_dsc = 'Eva ध्वनि चैट प्रा�
 if (conf.LANG == 'ES') vtalk_dsc = 'Comienza con el chat de voz de Eva.', reply_eva = '*¡Responde a cualquier mensaje de voz!*'
 if (conf.LANG == 'ML') vtalk_dsc = 'വോയ്‌സ് ചാറ്റിലേക്ക് ആരംഭിക്കുന്നു.', reply_eva = '*ഏത് വോയ്‌സ് സന്ദേശത്തിനും മറുപടി നൽകുക!*'
 if (conf.LANG == 'ID') vtalk_dsc = 'Mulai obrolan suara Eva.', reply_eva = '*Balas Pesan Suara Apapun!*'
+if (conf.LANG == 'SI') vtalk_dsc = 'පිංකි වොයිස් චැට් ආරම්භ කිරීම.', reply_eva = '*රිප්ලයි කරන්න මොනවහරි වොයිස් මැසේජ් එකකට!*'
 
 const recognizeAudio = () => {
     const headers = new Headers({
@@ -256,6 +257,13 @@ if (conf.LANG == 'ML') {
     already_off = 'pinky AI നിലവിൽ സെമി-ഫംഗ്ഷണൽ ആണ്.'
     succ_on = 'pinky പൂർണ്ണമായും പ്രവർത്തനക്ഷമമായി തുറന്നു! കുറച്ച് കാത്തിരിക്കൂ! ✅'
     succ_off = 'സെമി-ഫങ്ഷണൽ ആയി pinky സജ്ജമാക്കുക! കുറച്ച് കാത്തിരിക്കൂ! ☑️'
+}
+if (conf.LANG == 'SI') {
+    fulleva_dsc = 'ඇක්ටිවේට් කරමින් සියලු අවස්ථා😁. ඔබේ ගිණුම වෙනස් වෙමින් ai chatbot! සදහා'
+    already_on = 'Pinky artificial intelligence is already fully functional.'
+    already_off = 'Pinky artificial intelligence is currently running semi-functional.'
+    succ_on = 'Pinky Opened Fully Functionally! Please wait a bit! ✅'
+    succ_off = 'Pinky Set to Semi-Functional! Please wait a bit! ☑️'
 }
 
 Asena.addCommand({ pattern: 'pinky ?(.*)', desc: fulleva_dsc, fromMe: true,dontAddCommandList: true, usage: '.pinky on / off' }, (async (message, match) => {
