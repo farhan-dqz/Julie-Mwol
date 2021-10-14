@@ -29,7 +29,7 @@ Julie.addCommand({pattern: 'clear', fromMe: true, desc: END, dontAddCommandList:
 
 Julie.addCommand({pattern: 'clean ?(.*)', fromMe: true, desc: END, dontAddCommandList: true}, (async (message, match) => {
 
-    await message.sendMessage('Chat clearing...');   
+    await message.sendMessage('සංවාද පිරිසිදු කරමින්...');   
     await message.client.modifyChat (match[1] == '' ? message.jid : match [1], ChatModification.delete);
-    await message.sendMessage('🚮 Chat cleared');
+    await message.sendMessage('🚮 සංවාද පිරිසිදු කරන ලදි💫');
 }));
