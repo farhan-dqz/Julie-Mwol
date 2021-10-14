@@ -20,7 +20,7 @@ const { status, result } = data
 if(!status) return await message.sendMessage('not found')
 await message.client.sendMessage(message.jid, LOAD_ING , MessageType.text, { quoted: message.data });
 let msg = '```'
-msg +=  `NAME          :${result.judul}\n\n`
+msg +=  `NAME          :${result.devil}\n\n`
 msg +=  `DATE          :${result.rilis}\n\n`
 msg +=  `WEIGHT        :${result.ukuran}\n\n`
 msg +=  `VERSION       :${result.type}\n\n`
@@ -45,7 +45,7 @@ else if (Config.WORKTYPE == 'public') {
         if(!status) return await message.sendMessage('not found')
         await message.client.sendMessage(message.jid, LOAD_ING , MessageType.text, { quoted: message.data });
         let msg = '```'
-        msg +=  `NAME          :${result.judul}\n\n`
+        msg +=  `NAME          :${result.devil}\n\n`
         msg +=  `DATE          :${result.rilis}\n\n`
         msg +=  `WEIGHT        :${result.ukuran}\n\n`
         msg +=  `VERSION       :${result.type}\n\n`
