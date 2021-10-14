@@ -25,6 +25,11 @@ let baseURI = '/apps/' + config.HEROKU.APP_NAME;
         BGM_on = 'bgm ഓപ്ഷൻ ഓണാക്കി'
         BGM_off = 'bgm ഓപ്ഷൻ ഓഫാക്കി'
     }
+    if (config.LANG == 'SI') {
+        l_dsc = 'ආරම්භ කිරීම සහ වැසීම bgm. -බොට් අයිතිකරු විදානය'
+        BGM_on = 'bgm option ආරම්භ වී ඇත!'
+        BGM_off = 'bgm option වසා ඇත'
+    }
     Julie.addCommand({pattern: 'bgm ?(.*)', fromMe: true, desc: l_dsc, usage: '.bgm on / off' }, (async (message, match) => {
         if (match[1] == 'off') {
                 await heroku.patch(baseURI + '/config-vars', { 
