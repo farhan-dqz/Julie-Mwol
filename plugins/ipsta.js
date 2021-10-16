@@ -80,6 +80,13 @@ let baseURI = '/apps/' + config.HEROKU.APP_NAME;
         succ_on = 'Antilink Berhasil Dibuka!'
         succ_off = 'Antilink Berhasil Ditutup!'
     }
+    if (config.LANG == 'SI') {
+        l_dsc = 'ඇන්ටිලින්ක් ටූල් එක ස්තාපිතයි.'
+        alr_on = 'ඇන්ටිලින්ක් ආරම්භ වීමට සූදානම්!'
+        alr_off = 'ඇන්ටිලින්ක් අක්‍රීයයි!'
+        succ_on = 'ඇන්ටිකින්ක් ආරම්භ කිරීම සාර්ථකයි!'
+        succ_off = 'ඇන්ටිලින්ක් අක්‍රීය කිරීම සාර්ථකයි!'
+    }
     Julie.addCommand({pattern: 'antilink ?(.*)', fromMe: true, desc: l_dsc, usage: '.antilink on / off' }, (async (message, match) => {
         if (match[1] == 'off') {
                 await heroku.patch(baseURI + '/config-vars', { 
