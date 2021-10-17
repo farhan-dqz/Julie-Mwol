@@ -156,12 +156,12 @@
         "SONGD": {
             "description": "Customizable song DOWNLOADING message instead of 'Dowloading your song'",
             "required": true,
-            "value": "*ᴅᴏᴡɴʟᴏᴀᴅɪɴɢ ʏᴏɪʀ ꜱᴏɴɢ😻*"
+            "value": "*🌠ᴅᴏᴡɴʟᴏᴀᴅɪɴɢ ʏᴏɪʀ ꜱᴏɴɢ😻*"
         },
         "SONGU": {
             "description": "Customizable song UPLOADING message instead of 'Uploading your song'",
             "required": true,
-            "value": "*ᴜᴘʟᴏᴀᴅɪɴʜ ᴛʜᴇ ꜱᴏɴɢ🌠*"
+            "value": "*ᴜᴘʟᴏᴀᴅɪɴɢ ʏᴏɪʀ ꜱᴏɴɢ🌠*"
         },
         "ADD_MESSAGE": {
             "description": "Customizable Add Message! Use => default, to change back.",
