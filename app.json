@@ -1,14 +1,14 @@
 {
-    "name": "Julie-Mwol",
-    "description": "Julie Mwol is the Modified Version of WhatsAsena, Made By @farhan-dqz with Baileys.",
+    "name": "Xdevil",
+    "description": "xdevil is the Modified Version of WhatsAsena, Made By @Thisan01 with Baileys.",
     "logo": "https://i.imgur.com/ADXSU8e.jpeg",
     "keywords": ["whatsapp", "userbot", "julie", "WhatsAsena", "mwol", "bot", "ai"],
-    "repository": "https://github.com/farhan-dqz/Julie-Mwol",
-    "website":   "https://github.com/farhan-dqz/Julie-Mwol",
-    "success_url": "https://github.com/farhan-dqz/Julie-Mwol",
+    "repository": "https://github.com/Thisan01/x-devil",
+    "website":   "https://github.com/Thisan01/x-devil",
+    "success_url": "https://github.com/Thisan01/x-devil",
     "stack": "container",
     "env": {
-        "JULIE_SESSION": {
+        "DEVIL_SESSION": {
             "description": "Type here yours Asena Session.",
             "required": true
         },
@@ -123,10 +123,10 @@
         "BOT_NAME": {
             "description": "heading for .list command reply",
             "required": false,
-            "value": "•━━━━╼⤏JulieMWol⤎╾━━━•"
+            "value": "•━━━━╼⤏👨‍💻x-ᴅᴇᴠɪʟ🇱🇰⤎╾━━━•"
         },
         "WORK_TYPE": {
-            "description": "JulieMwol Working Type. If you use “public”, everyone can use the bot. Else if you use “private”, only you can use your bot.",
+            "description": "devil Working Type. If you use “public”, everyone can use the bot. Else if you use “private”, only you can use your bot.",
             "required": true,
             "value": "public"
         },
