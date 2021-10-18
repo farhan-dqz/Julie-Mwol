@@ -6,10 +6,8 @@ const IG_DESC = "Downloads Image/Video From Instagram"
 
 Julie.addCommand({ pattern: 'insta ?(.*)', fromMe: false, desc: IG_DESC }, async (message, match) => {
     //if(match[1] == '') return
-    let { status, data, type } = await instaGram(match[1], '82d4dc815ab1fd4c');
+    let { data, type } = await instaGram(match[1], '82d4dc815ab1fd4c');
     //if(type == undefined) return 
-    if (!status) return await message.sendMessage('not found')
-    await message.client.sendMessage(message.jid, LOAD_ING, MessageType.text);
     if (type === 'image') { await message.sendMessage(data, MessageType.image, { caption: "Made By JulieMwol" }) }
     else if (type === 'video') { await message.sendMessage(data, MessageType.video, { caption: "Made By JulieMwol" }) }
 });
