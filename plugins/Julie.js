@@ -66,7 +66,7 @@ else if (Config.WORKTYPE == 'public') {
           } else {
             HANDLER = ".";
           }
-          CMD_HELP += '*🧞‍♂️' + 
+          CMD_HELP += '🧞‍♂️' + 
             (match.length >= 3 ? HANDLER + match[2] : command.pattern) +
             (command.desc === ""
               ? "\n\n"
