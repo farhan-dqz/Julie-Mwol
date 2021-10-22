@@ -4,6 +4,7 @@ const Config = require('../config');
 
 const Language = require('../language');
 const Lang = Language.getString('admin');
+const jul = Language.getString('julie');
 const mut = Language.getString('mute');
 const fs = require('fs');
 
@@ -1555,12 +1556,19 @@ Julie.addCommand({pattern: 'invite ?(.*)', fromMe: true, dontAddCommandList: tru
 
 Julie.addCommand({pattern: 'rename ?(.*)', onlyGroup: true, fromMe: true,desc: Julie}, (async (message, match) => {
     var im = await checkImAdmin(message);
-    if (!im) return await message.client.sendMessage(message.jid,'i am not admin',MessageType.text);
+    if (!im) return await message.client.sendMessage(message.jid,Lang.IM_NOT_ADMIN,MessageType.text);
     if (match[1] === '') return await message.client.sendMessage(message.jid,'changing',MessageType.text);
     await message.client.groupUpdateSubject(message.jid, match[1]);
     await message.client.sendMessage(message.jid,'group name changed to  ```' + match[1] + '```' ,MessageType.text);
     }
 ));
+
+Julie.addCommand({pattern: 'revoke', fromMe: true, onlyGroup: true, desc: jul.REVOKE_DESC}, (async (message, match) => {    
+    var im = await checkImAdmin(message);
+    if (!im) return await message.client.sendMessage(message.jid, Lang.IM_NOT_ADMIN, MessageType.text);
+    await message.client.revokeInvite(message.jid)
+    await message.client.sendMessage(message.jid, jul.REVOKED, MessageType.text);
+}))
 
 module.exports = {
     checkImAdmin: checkImAdmin
