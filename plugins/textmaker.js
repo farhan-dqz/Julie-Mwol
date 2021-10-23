@@ -2,7 +2,7 @@
 re edited by farhan-dqz
 */
 
-const thiccysapi = require('textmaker-thiccy'); // Import NPM Package
+const w5botapi = require('w5bot-textmaker'); // Import NPM Package
 
 const Asena = require('../events');
 const {MessageType, GroupSettingChange, Mimetype, MessageOptions} = require('@adiwajshing/baileys');
