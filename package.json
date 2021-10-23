@@ -26,7 +26,7 @@
   "homepage": "https://github.com/farhan-dqz/Julie-Mwol#readme",
   "dependencies": {
     "@lh2020/speedtest-net": "^2.1.1",
-    "textmaker-thiccy": "1.2.1",
+    "w5bot-textmaker": "1.0.0",
     "browser-id3-writer": "^4.4.0",
     "playstore-scraper": "^1.0.0",
     "axios": "^0.21.1",
