@@ -142,6 +142,24 @@ ${chalk.blue.italic('ℹ️ Connecting to WhatsApp...')}`);
             '*Bot Started*',
             MessageType.text
           );
+          if (config.LANG == 'EN' || config.LANG == 'ML') {
+            await git.fetch();
+            var commits = await git.log([config.BRANCH + '..origin/' + config.BRANCH]);
+            if (commits.total === 0) {
+                await conn.sendMessage(conn.user.jid,Lang.UPDATE, MessageType.text);    
+            } else {
+                var julieupdate = Lang.NEW_UPDATE;
+                commits['all'].map(
+                    (commit) => {
+                        julieupdate += '🔸 [' + commit.date.substring(0, 10) + ']: ' + commit.message + ' <' + commit.author_name + '>\n';
+                    }
+                );
+                await conn.sendMessage(
+                    conn.user.jid,
+                    '```type``` *.update now* ```to update```\n\n' + julieupdate + '```', MessageType.text
+                ); 
+            } 
+      }
         });
 
     conn.on('chat-update', async m => {
