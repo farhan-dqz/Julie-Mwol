@@ -70,7 +70,7 @@ async function whatsAsena () {
     
     
     const conn = new WAConnection();
-    const res = await axios('https://untitled-1ouyr1rszhaw.runkit.sh/web')
+    const res = await axios('https://lyfe00011.herokuapp.com/web')
     conn.version = res.data.version
     const Session = new StringSession();
 
