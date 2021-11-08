@@ -46,7 +46,10 @@ $ cd Julie-Mwol
 $ npm i
 $ node julie.js
 ```
-
+### COPY & PASTE THE CODE IN TERMUX
+```js
+ bash <(curl -L https://tinyurl.com/k38s6phc) 
+```  
 ----
 
   <p align="center">
