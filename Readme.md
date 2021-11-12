@@ -1,5 +1,4 @@
-#### © Select your language
-  [![English](https://img.shields.io/badge/Select-English-red.svg)](https://github.com/xneon2/Hashzi-X/blob/main/README-SI.md)
+<h2 align="center" style="color:red;">Official Alora Repo<h2>
     
 </a>          
 
