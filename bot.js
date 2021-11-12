@@ -325,7 +325,7 @@ ${chalk.blue.italic('ℹ️ Connecting to WhatsApp...')}`);
                                     , MessageType.text);
                             } else {
                                 await conn.sendMessage(conn.user.jid, '*~_________~ ➤ＡＬＯＲＡ➤ ~______~*' +
-                                    '\n\n*🧞‍♂️ ' + error + '*\n\n*Support group*\nchat.whatsapp.com/EWLP9PgYmgGff6NORWSKk ' 
+                                    '\n\n*🧞‍♂️ ' + error + '*\n\n*Thank You for using AloraBot*\n\n*https://chat.whatsapp.com/H8gV54QuJVpIkUMti7MbQ3 ' 
                                     , MessageType.text);
                             }
                         }
