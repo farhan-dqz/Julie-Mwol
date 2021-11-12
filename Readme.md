@@ -79,7 +79,7 @@
 #### සරල ක්‍රමය
 
 #### ඔබට පහසුවෙන්ම Repl.it මඟින් QR ගන්න පුලුවන්..පහල  බටනය භාවිත කරන්න
-[![Run on Repl.it](https://repl.it/badge/github/quiec/whatsasena)](https://replit.com/@xYAZUWA/Queen-Alora-QR-Code?v=1)
+[![Run on Repl.it](https://repl.it/badge/github/quiec/whatsasena)](https://replit.com/@xYAZUWA/AloraBotQR)
 ```
 Queen Alora bot ගොඩනැගීමට ඔබට ජංගම දුරකථන 2 ක් අවශ්‍ය වේ!
 ඔබ දෙවන උපාංගයෙන් bot ක්‍රියා කරනු ඇත. 
@@ -87,7 +87,7 @@ Queen Alora bot ගොඩනැගීමට ඔබට ජංගම දුරක�
 පළමු උපාංගයෙන් ඔබට Alora Bot install කිරීමට අවශ්‍යයි..
 ```
 #### QR කේතය ලබා ගත් පසු පහල බටනය ඔබලා Bot deploy කරන්න
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://dashboard.heroku.com/new?&template=https://github.com/xYAZUWA/QueenAlora.)
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://dashboard.heroku.com/new?&template=https://github.com/xYAZUWA/AmazoneAlora)
 
 # 🌺Alora පහසුකම් ලැයිස්තුව
     Bot සාදාගත්තාට පසු .panel ලෙස ටයිප් කර සෙන්ඩ් කිරිමෙන් මෙය ලබාගත හැකිය.
