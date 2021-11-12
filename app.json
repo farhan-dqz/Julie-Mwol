@@ -3,9 +3,9 @@
     "description": "ALORA is the Modified Version of WhatsAsena, Made By @yaz with Baileys.",
     "logo": "https://i.ibb.co/J2rwPPj/20211107-201343.jpg",
     "keywords": ["whatsapp", "userbot", "julie", "WhatsAsena", "mwol", "bot", "ai"],
-    "repository": "https://github.com/farhan-dqz/Julie-Mwol",
-    "website":   "https://github.com/farhan-dqz/Julie-Mwol",
-    "success_url": "https://github.com/farhan-dqz/Julie-Mwol",
+    "repository": "https://github.com/xYAZUWA/AmazoneAlora",
+    "website":   "https://github.com/xYAZUWA/AmazoneAlora",
+    "success_url": "https://github.com/xYAZUWA/Julie-Mwol",
     "stack": "container",
     "env": {
         "ALORA_SESSION": {
