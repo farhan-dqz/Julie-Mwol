@@ -140,7 +140,7 @@ ${chalk.blue.italic('ℹ️ Connecting to WhatsApp...')}`);
         });
 
         console.log(
-            chalk.green.bold('✅ Julie Mwol working!')
+            chalk.green.bold('✅ Alora Bot working!')
         );
         await conn.sendMessage(
             conn.user.jid,
