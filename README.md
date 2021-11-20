@@ -2,10 +2,10 @@
 <div align="center">
   <img border-radius: 15px src="https://avatars.githubusercontent.com/u/83164448?v=4" width="200" height="200"/>
   <p align="center">
-<a href="#"><img title="Bot-MwolMwol" src="https://img.shields.io/badge/Bot-MwolMwol-green?colorA=%23ff0000&colorB=%23017e40&style=for-the-badge"></a>
+<a href="#"><img title="Bot-Mwol" src="https://img.shields.io/badge/Bot-Mwol-green?colorA=%23ff0000&colorB=%23017e40&style=for-the-badge"></a>
 </p>
   <p align="center">
-<a href="https://github.com/Kichu244"><img title="Author" src="https://img.shields.io/badge/Author-Kichu244/Bot-MwolMwol?color=blue&style=for-the-badge&logo=whatsapp"></a>
+<a href="https://github.com/Kichu244"><img title="Author" src="https://img.shields.io/badge/Author-Kichu244/Bot-Mwol?color=blue&style=for-the-badge&logo=whatsapp"></a>
 </p>
 </div>
 <p align="center">
@@ -16,7 +16,7 @@ Project created by <a href="https://github.com/Kichu244">Kichu244</a> to make it
     <br> 
 </p>
 
-![Profile Views](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https://github.com/Kichu244/Bot-MwolMwol&title=Profile%20Views)
+![Profile Views](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https://github.com/Kichu244/Bot-Mwol&title=Profile%20Views)
 
 ## Setup
 <div align="center">
@@ -32,8 +32,8 @@ Project created by <a href="https://github.com/Kichu244">Kichu244</a> to make it
 GET QR
 $ apt install git
 $ apt install nodejs --fix-missing
-$ git clone https://github.com/Kichu244/Bot-Mwol-Mwol
-$ cd Bot-Mwol-Mwol
+$ git clone https://github.com/Kichu244/Bot-Mwol
+$ cd Bot-Mwol
 $ npm install @adiwajshing/baileys
 $ npm install chalk
 $ node Bot-Mwol.js
@@ -42,7 +42,7 @@ $ node Bot-Mwol.js
 ```js
 SETUP
 $ git clone https://github.com/Kichu244/Bot-Mwol
-$ cd Bot-Mwol
+$ cd Bot-Mwol 
 $ npm i
 $ node Bot-Mwol.js
 ```
@@ -80,14 +80,7 @@ Absolutely, Asena executives do not accept responsibility.
 By establishing the Asena, you are deemed to have accepted these responsibilities.
 ```
 
-## Developers
-  <div align="center">
-    
-  [![Kichu244](https://github.com/Kichu244.png?size=100)](https://github.com/Kichu244) | [![TOXIC-DEVIL](https://github.com/TOXIC-DEVIL.png?size=100)](https://github.com/TOXIC-DEVIL) |  [![TOXIC4L!3N](https://github.com/Alien-alfa.png?size=100)](https://github.com/AI-VIKI) | [![afnanplk](https://github.com/afnanplk.png?size=100)](https://github.com/afnanplk) 
-----|----|----|----
-[Kichu244](https://github.com/Kichu244) | [TOXIC-DEVIL](https://github.com/TOXIC-DEVIL) | [TOXIC4L!3N](https://github.com/AI-VIKI) | [afnanplk](https://github.com/afnanplk) 
-Developer, Base, Bug Fixes, Modules| Re-Developer, Bug Fixes, Modules, Commits |  Modifiying  as   public | Bug Fixes, Modules 
-  </div>
+
     
 
 
