@@ -90,19 +90,19 @@ let baseURI = '/apps/' + config.HEROKU.APP_NAME;
         await message.sendMessage("NEW CAPTION UPDATED")
     }));
 
-    Julie.addCommand({ pattern: 'handlers ?(.*)', fromMe: true, desc: 'changes handlers', usage: '.handler ^[.!] ' }, (async (message, match) => {
-        if (match[1] == '') return await message.sendMessage('NEED A CAPTION')
+    Julie.addCommand({ pattern: 'handlers ?(.*)', fromMe: true, desc: 'changes handlers', usage: '.handler .!?, ' }, (async (message, match) => {
+        if (match[1] == '') return await message.sendMessage('NEED REQUIRED PARAMETERS!')
         await heroku.patch(baseURI + '/config-vars', {
             body: {
-                ['ALL_CAPTION']: match[1]
+                ['HANDLERS']: '^['+ match[1] + ']'
             }
         });
-        await message.sendMessage("NEW HANDLER UPDATED")
+        await message.sendMessage("HANDLERS UPDATED SUCCESSFULLY!")
     }));
 
 
     Julie.addCommand({ pattern: 'botname ?(.*)', fromMe: true, desc: 'change your bot name', usage: '.botname *name* ' }, (async (message, match) => {
-        if (match[1] == '') return await message.sendMessage('TYPE YOUR NEW BOT NAME')
+        if (match[1] == '') return await message.sendMessage('TYPE YOUR NEW BOT NAME!')
         await heroku.patch(baseURI + '/config-vars', {
             body: {
                 ['BOT_NAME']: match[1]
@@ -112,7 +112,7 @@ let baseURI = '/apps/' + config.HEROKU.APP_NAME;
     }));
 
 Julie.addCommand({ pattern: 'theri  ?(.*)', fromMe: true, desc: 'change your theri commands', usage: '.theri command,command' }, (async (message, match) => {
-        if (match[1] == '') return await message.sendMessage('TYPE YOUR NEW BOT NAME')
+        if (match[1] == '') return await message.sendMessage('NEED REQUIRED PARAMETERS!')
         await heroku.patch(baseURI + '/config-vars', {
             body: {
                 ['THERI_LIST']: match[1]
