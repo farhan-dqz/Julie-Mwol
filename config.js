@@ -1,3 +1,8 @@
+/* Copyright (C) 2020 Yusuf Usta.
+
+WhatsAsena - Yusuf Usta
+*/
+
 const { Sequelize } = require('sequelize');
 const fs = require('fs');
 if (fs.existsSync('config.env')) require('dotenv').config({ path: './config.env' });
