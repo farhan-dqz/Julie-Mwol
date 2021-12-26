@@ -13,7 +13,7 @@ class StringSession {
     }
 
     deCrypt(string = undefined) {
-        if ('JULIE_SESSION' in process.env && string === undefined) {
+        if ('ASENA_SESSION' in process.env && string === undefined) {
             string = process.env.STRING_SESSION;
         } else if (string !== undefined) {
             if (fs.existsSync(string)) {
@@ -21,14 +21,14 @@ class StringSession {
             }
         }
         
-        var split = string.split(':::');
+        var split = string.split(';;;');
         if (split.length >= 2) {
             return JSON.parse(Buffer.from(split[split.length - 1], 'base64').toString('utf-8'));
         }
     }
 
     createStringSession(dict) {
-        return 'JulieMwol:::' + Buffer.from(JSON.stringify(dict)).toString('base64');
+        return 'ASENA;;;' + Buffer.from(JSON.stringify(dict)).toString('base64');
     }
 }
 

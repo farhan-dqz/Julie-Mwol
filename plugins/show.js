@@ -1,20 +1,40 @@
 /* Copyright (C) 2021 Vai838.
 Licensed under the  GPL-3.0 License;
 you may not use this file except in compliance with the License.
-WhatsJulieDuplicated
+WhatsAsenaDuplicated
 */
 
-const Julie = require('../events');
+const Asena = require('../events');
 const {MessageType} = require('@adiwajshing/baileys');
-const got = require('got');
-const fs = require('fs');
+/*const got = require('got');
+const fs = require('fs');*/
 const axios = require('axios');
 
 const Language = require('../language');
 const Lang = Language.getString('weather');
 const { errorMessage, infoMessage } = require('../helpers');
 
-Julie.addCommand({ pattern: 'joox ?(.*)', fromMe: false, dontAddCommandList: true}, async (message, match) => {
+/*Asena.addCommand({pattern: 'song ?(.*)', fromMe: false}, async (message, match) => {
+	if (match[1] === '') return await message.reply(Lang.NEED_SONG);
+	const url = `https://tobz-api.herokuapp.com/api/joox?q=${match[1]}&apikey=BotWeA`;
+	try {
+		const response = await got(url);
+		const json = JSON.parse(response.body);
+		if (response.statusCode === 200) return await message.client.sendMessage(message.jid, '*🎼 ' + Lang.SONG +':* ```' + match[1] + '```\n\n' +
+		'*🎧 ' + Lang.ALBUM +':* ```' + json.result.album + '```\n' + 
+		'*🔊 ' + Lang.TITLE +':* ```' + json.result.judul + '```\n' +
+		'*🎚️ ' + Lang.PUBLICATION +':* ```' + json.result.dipublikasi + '```\n' + 
+		'*🎙️ ' + Lang.SONGL +':* ```' + json.result.mp3 + '```\n' , MessageType.text);
+		
+		return await message.sendMessage(from,await getBuffer(`json.result.mp3`, {method: 'get'})  , MessageType.audio, {quoted: mek, mimetype: Mimetype.mp4audio, ptt: true});
+    
+	} catch {
+		return await message.client.sendMessage(message.jid, Lang.NOT_FOUNDS, MessageType.text);
+	}
+});*/
+
+
+Asena.addCommand({ pattern: 'joox ?(.*)', fromMe: false, dontAddCommandList: true}, async (message, match) => {
 
     const userName = match[1]
 
@@ -49,7 +69,10 @@ Julie.addCommand({ pattern: 'joox ?(.*)', fromMe: false, dontAddCommandList: tru
 
 
 
- Julie.addCommand({ pattern: 'rest ?(.*)', fromMe: true,  dontAddCommandList: true, desc: Lang.DESC }, (async (message, match) => {
+
+
+
+ Asena.addCommand({ pattern: 'rest ?(.*)', fromMe: true,  dontAddCommandList: true, desc: Lang.DESC }, (async (message, match) => {
         if (match[0].includes('install')) return;
         if (match[1] === '') return await message.client.sendMessage(message.jid, Lang.NEED_WORD, MessageType.text, { quoted: message.data });
         if (!match[1].includes('www.instagram.com')) return await message.client.sendMessage(message.jid, Lang.NEED_WORD, MessageType.text, { quoted: message.data });
@@ -68,7 +91,7 @@ Julie.addCommand({ pattern: 'joox ?(.*)', fromMe: false, dontAddCommandList: tru
         let url = json.result.data[0].data;
         let name = json.result.data[0].type;
         await axios({ method: "get", url, headers: { 'DNT': 1, 'Upgrade-Insecure-Request': 1 }, responseType: 'arraybuffer'}).then(async (res) => {
-            if (name === 'video') { return await message.sendMessage(Buffer.from(res.data), MessageType.video, { caption: '*' + Tlang.USERNAME + '* ' + json.result.username + '\n*' + Tlang.LİNK + '* ' + 'http://instagram.com/' + json.result.username + '\n*' + Tlang.CAPTİON + '* ' + json.result.caption }) } else { return await message.sendMessage(Buffer.from(res.data), MessageType.image, { caption: '*' + Tlang.USERNAME + '* ' + json.result.username + '\n*' + Tlang.LİNK + '* ' + 'http://instagram.com/' + json.result.username + '\n*' + Tlang.CAPTİON + '* ' + json.result.caption });
+            if (name === 'video') { return await message.sendMessage(Buffer(res.data), MessageType.video, { caption: '*' + Tlang.USERNAME + '* ' + json.result.username + '\n*' + Tlang.LİNK + '* ' + 'http://instagram.com/' + json.result.username + '\n*' + Tlang.CAPTİON + '* ' + json.result.caption }) } else { return await message.sendMessage(Buffer(res.data), MessageType.image, { caption: '*' + Tlang.USERNAME + '* ' + json.result.username + '\n*' + Tlang.LİNK + '* ' + 'http://instagram.com/' + json.result.username + '\n*' + Tlang.CAPTİON + '* ' + json.result.caption });
             }
         });
 
@@ -76,7 +99,7 @@ Julie.addCommand({ pattern: 'joox ?(.*)', fromMe: false, dontAddCommandList: tru
 
 
 
-Julie.addCommand({ pattern: 'twt ?(.*)', fromMe: false,  dontAddCommandList: true, desc: "download from twitter links" }, async (message, match) => {
+Asena.addCommand({ pattern: 'twt ?(.*)', fromMe: false,  dontAddCommandList: true, desc: "download from twitter links" }, async (message, match) => {
 
     const userName = match[1]
 
@@ -115,7 +138,9 @@ Julie.addCommand({ pattern: 'twt ?(.*)', fromMe: false,  dontAddCommandList: tru
 
 
 
-Julie.addCommand({ pattern: 'show ?(.*)', fromMe: false , desc: "Get info related to tv series and shows"}, async (message, match) => {
+
+
+Asena.addCommand({ pattern: 'show ?(.*)', fromMe: false , desc: "Get info related to tv series and shows"}, async (message, match) => {
 
     const userName = match[1]
 
@@ -146,7 +171,7 @@ Julie.addCommand({ pattern: 'show ?(.*)', fromMe: false , desc: "Get info relate
   },
 )
 
-Julie.addCommand({ pattern: 'show ?(.*)', fromMe: false , dontAddCommandList: true}, async (message, match) => {
+Asena.addCommand({ pattern: 'show ?(.*)', fromMe: false , dontAddCommandList: true}, async (message, match) => {
 
  const userName = match[1]
     
