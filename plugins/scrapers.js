@@ -544,7 +544,7 @@ if (config.WORKTYPE == 'private') {
         gis(match[1], async (error, result) => {
             for (var i = 0; i < (result.length < 5 ? result.length : 5); i++) {
                 var get = got(result[i].url, {https: {rejectUnauthorized: false}});
-                var stream = get.buffer();
+                var stream = get.Buffer.from();
                 
                 stream.then(async (image) => {
                     await message.client.sendMessage(message.jid,image, MessageType.image);
@@ -1071,7 +1071,7 @@ else if (config.WORKTYPE == 'public') {
         gis(match[1], async (error, result) => {
             for (var i = 0; i < (result.length < 8 ? result.length : 8); i++) {
                 var get = got(result[i].url, {https: {rejectUnauthorized: false}});
-                var stream = get.buffer();
+                var stream = get.Buffer.from();
                 
                 stream.then(async (image) => {
                     await message.client.sendMessage(message.jid,image, MessageType.image);
