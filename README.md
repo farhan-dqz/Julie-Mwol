@@ -1,9 +1,7 @@
 ## [![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Lemon+milk&color=F70000&lines=HI+welcome+to+Abhikutti+repo;Created+by+Ajay-o-s;This+is+a+normal+whatsapp+Bot+with+media+clips;With+more+features)](https://git.io/typing-svg)
 </a>
-</p>
-## [![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Lemon+milk&color=F70000&lines=Project+Created+by+Ajay-o-s;With+more+features)](https://git.io/typing-svg)
+[![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Lemon+milk&color=F70000&lines=Project+Created+by+Ajay-o-s;With+more+features)](https://git.io/typing-svg)
 </a>
-</p>
 <div align="center">
   <img border-radius: 15px src="https://avatars.githubusercontent.com/u/93880951?v=4" width="200" height="200"/>
   <p align="center">
@@ -14,8 +12,6 @@
 </p>
 </div>
 <p align="center">
-  
-
 Project created by <a href="https://github.com/Ajay-o-s">Ajay-o-s</a> to make it public
     <br>
        | © |
