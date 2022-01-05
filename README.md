@@ -21,7 +21,7 @@ Project created by <a href="https://github.com/Ajay-o-s">Ajay-o-s</a> to make it
        | © |
         Reserved |
     <br> 
-  ![Profile Views](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https://github.com/farhan-dqz/JulieMwol&title=Profile%20Views)
+![Profile Views](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https://github.com/niyababy/kerthana&title=Profile%20Views)
   <br>
 </p>
 
