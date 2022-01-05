@@ -1,10 +1,11 @@
 [![Typing SVG](https://readme-typing-svg.herokuapp.com?color=%23F72E0C&size=36&lines=welcome+to+akhub)](https://git.io/typing-svg)
 
 
-## [![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Lemon+milk&color=F70000&lines=HI+welcome+to+Abhikutti+repo;Created+by+Ajay-o-s;This+is+a+normal+whatsapp+Bot+with+media+clips;With+more+features)](https://git.io/typing-svg)
-  <br> 
+[![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Lemon+milk&color=F70000&lines=HI+welcome+to+Abhikutti+repo;Created+by+Ajay-o-s;This+is+a+normal+whatsapp+Bot+with+media+clips;With+more+features)](https://git.io/typing-svg)
 ## [![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Lemon+milk&color=F70000&lines=Project+Created+by+Ajay-o-s;With+more+features)](https://git.io/typing-svg)
   <br> 
+    <br> 
+      <br> 
 <div align="center">
   <img border-radius: 15px src="https://avatars.githubusercontent.com/u/93880951?v=4" width="200" height="200"/>
   <p align="center">
