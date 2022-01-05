@@ -1,9 +1,10 @@
 ## [![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Lemon+milk&color=F70000&lines=HI+welcome+to+Abhikutti+repo;Created+by+Ajay-o-s;This+is+a+normal+whatsapp+Bot+with+media+clips;With+more+features)](https://git.io/typing-svg)
-
-<div align="center">
 </a>
 </p>
-
+## [![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Lemon+milk&color=F70000&lines=Project+Created+by+Ajay-o-s;With+more+features)](https://git.io/typing-svg)
+</a>
+</p>
+<div align="center">
   <img border-radius: 15px src="https://avatars.githubusercontent.com/u/93880951?v=4" width="200" height="200"/>
   <p align="center">
 <a href="#"><img title="Abhikutti" src="https://img.shields.io/badge/Abhikutti-red?colorA=%23ff0000&colorB=%23017e40&style=for-the-badge"></a>
@@ -21,7 +22,7 @@ Project created by <a href="https://github.com/Ajay-o-s">Ajay-o-s</a> to make it
         Reserved |
     <br> 
 </p>
-## [![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Lemon+milk&color=F70000&lines=Project+Created+by+Ajay-o-s;With+more+features)](https://git.io/typing-svg)
+
 
 ![Profile Views](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https://github.com/farhan-dqz/JulieMwol&title=Profile%20Views)
 
