@@ -1,8 +1,8 @@
-[![Typing SVG](https://readme-typing-svg.herokuapp.com?color=%23F72E0C&size=36&lines=welcome+to+akhub)](https://git.io/typing-svg)
+[![Typing SVG](https://readme-typing-svg.herokuapp.com?color=%23F72E0C&size=36&lines=HI+IAM+NIYABABY)](https://git.io/typing-svg)
 
 
 [![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Lemon+milk&color=F70000&lines=HI+welcome+to+Abhikutti+repo;Created+by+Ajay-o-s;This+is+a+normal+whatsapp+Bot+with+media+clips;With+more+features)](https://git.io/typing-svg)
-## [![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Lemon+milk&color=F70000&lines=Project+Created+by+Ajay-o-s;With+more+features)](https://git.io/typing-svg)
+## [![Typing SVG](https://readme-typing-svg.herokuapp.com?color=%23F72E0C&size=36&lines=Project+Created+by+Ajay-o-s;NIYABABY)](https://git.io/typing-svg)
   <br> 
     <br> 
       <br> 
@@ -67,3 +67,5 @@ This project is protected by `GNU General Public Licence v3.0` license.
 
 ### Disclaimer
 `WhatsApp` name, its variations and the logo are registered trademarks of Facebook. We have nothing to do with the registered trademark
+  
+ [![Typing SVG](https://readme-typing-svg.herokuapp.com?color=%23F72E0C&size=36&lines=%60WhatsApp%60+name%2C+its+variations++;and+the+logo+are+registered+trademarks+of+Facebook.;We+have+nothing+to+do+with+the+registered+trademark)](https://git.io/typing-svg)
