@@ -1,4 +1,5 @@
 ## [![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Lemon+milk&color=F70000&lines=HI+welcome+to+Abhikutti+repo;Created+by+Ajay-o-s;This+is+a+normal+whatsapp+Bot+with+media+clips;With+more+features)](https://git.io/typing-svg)
+[![Typing SVG](https://readme-typing-svg.herokuapp.com?color=%23F72E0C&size=70&lines=welcome+to+akhub)](https://git.io/typing-svg)
   <br> 
 ## [![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Lemon+milk&color=F70000&lines=Project+Created+by+Ajay-o-s;With+more+features)](https://git.io/typing-svg)
   <br> 
